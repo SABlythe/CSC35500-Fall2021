@@ -10,9 +10,12 @@ using namespace std;
 int main (int argc, char *argv[])
 {
   int pipeInfo[2];
+
   int myPipe = pipe(pipeInfo);
 
   int pid=fork();
+  
+
   
   if (pid!=0) // parent, which will do "wc"
   {
