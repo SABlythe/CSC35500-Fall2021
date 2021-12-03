@@ -46,14 +46,6 @@ extractNextDigit:
 	jne	extractNextDigit
 	
 printDigitFromStack:
-	mov	[tmplbl], al	; put digit into string to print
-	
-	;;;  print out 1 character string starting at tmplbl
-	mov	eax, 0x4
-	mov	ebx, 0x1
-	mov	ecx, tmplbl
-	mov	edx, 0x1
-	int	0x80
 	pop	rax		; pop next digit from stack
 	mov	[tmplbl], al	; put digit into string to print
 	

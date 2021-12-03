@@ -3,7 +3,7 @@
 	extern	printRAX
 
 _start:
-	mov	rax, -513
+	mov	rax, -513786
 	call 	printRAX
 	
 	; return control to Linux 
